@@ -1,6 +1,13 @@
 @font-face {
     font-family: 'Midnight Letters';
+    src: url("/static/fonts/MidnightLetters-Regular.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Midnight Letters';
     src: url("/static/fonts/MidnightLetters-Italic.ttf");
+    font-style: italic;
 }
 
 body {
