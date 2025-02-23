@@ -1,0 +1,112 @@
+@font-face {
+    font-family: MidnightLettersItalic;
+    src: url("/static/fonts/MidnightLetters-Italic.ttf");
+}
+
+body {
+    font-family: 'Midnight Letters', monospace;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#center-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+#container {
+    transform: translateY(-100px)
+}
+
+h1 {
+    font-style: italic;
+    font-size: 40pt;
+    text-align: center;
+    margin-top: 0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.button-row a {
+    font-size: 20pt;
+    color: white;
+    border: 5px solid white;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.button-row a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 25pt;
+    }
+
+    #center-col {
+        padding-left: 0.5em;
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 40pt;
+    }
+
+    #center-col {
+        width: 90%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 45pt;
+    }
+
+    #center-col {
+        width: 90%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 45pt;
+    }
+
+    #center-col {
+        width: 70%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 45pt;
+    }
+
+    #center-col {
+        width: 50%;
+    }
+}
